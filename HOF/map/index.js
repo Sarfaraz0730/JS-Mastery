@@ -44,3 +44,44 @@ const tempInFahrenheit = temperatures.map((temp,i)=>{
     return ( temp * 9/5 + 32)
 })
 console.log("tempInFahrenheit",tempInFahrenheit)
+
+/*
+Given an array of words, use map to return a new array with the first letter of 
+each word capitalized. */
+
+const firstCapitaliseWord = words.map((word)=>word[0].toUpperCase());
+console.log("firstCapitaliseWord",firstCapitaliseWord)
+
+
+/*
+Given an array of strings containing numbers, use map to convert them to actual number values.
+*/
+const strOfNumber = ["1","10","20","40","50"];
+const convertToNumber = strOfNumber.map((str)=>{
+    return +str
+})
+console.log("convertToNumber",typeof(convertToNumber[0]))
+
+
+/*
+Given an array of sentences, use map to return a new array with the number of words in each sentence.
+*/
+const statement = ["hi My name is Sarfaraz", "I am 23 year old","I love Javascirpt","I Love my self"];
+
+const lengthOfStatement = statement.map((str)=>{
+    return str.length
+});
+console.log("lengthOfStatement",lengthOfStatement)
+
+
+
+/*
+how to solve this Create a function that takes an array of dates in string format (e.g., "2023-10-28") and uses map to return an array of JavaScript Date objects.
+*/
+
+const dateStrings = ["2023-10-28", "2023-11-15", "2023-12-01"];
+
+const dateObject = dateStrings.map((date)=>{
+    return new Date(date)
+})
+console.log("dateObject",dateObject)
