@@ -4,7 +4,7 @@ const output = arr.reduce(function(acc,curr){
     acc= acc+curr;
     return acc
 },0)
-console.log("output : ",output)
+
 
 // find max element from the arr
 
@@ -18,7 +18,7 @@ function maxElement (arr){
     }
     return max
 }
-console.log("maxElement ", maxElement(arr))
+
 
 const maxOutput =  arr.reduce(function(max,curr){
    
@@ -27,4 +27,21 @@ const maxOutput =  arr.reduce(function(max,curr){
  }
  return max
 },-Infinity)
-console.log("maxOutput :",maxOutput)
+
+
+const apiData = [
+ {firstName:"Sarfaraz",lastName:"Sheikh",age:23},
+ {firstName:"Ravi",lastName:"Verma",age:21},
+ {firstName:"Ayush",lastName:"Singh",age:19},
+]
+
+// output = ["Sarfaraz Sheikh", "Ravi Verma", "Ayush Singh"]
+const getFullname = (apiData)=>{
+    var ans = []
+  for(let i=0;i<apiData.length;i++){
+    console.log("fname",apiData[i].firstName)
+    ans.push(apiData[i].firstName  +" "+ apiData[i].lastName)
+  }
+  return ans
+}
+console.log("getFullname",getFullname(apiData))
