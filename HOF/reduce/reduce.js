@@ -39,8 +39,15 @@ const apiData = [
 
 
 //  find all the firstName whose age is less than 30
-const ageLessThan30 = apiData.filter((item)=>item.age<30).map((name)=>name.firstName)
-console.log("ageLessThan30 ",ageLessThan30)
+// const ageLessThan30 = apiData.filter((item)=>item.age<30).map((name)=>name.firstName)
+// console.log("ageLessThan30 ",ageLessThan30);
+const age30 = apiData.reduce(function(acc,curr){
+   if(curr.age<30){
+    acc.push(curr.firstName)
+   }
+   return acc
+},[])
+console.log("age30",age30)
 // output{23:2, 21:1,19:1,70:1}
 
 
