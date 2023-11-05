@@ -78,3 +78,5 @@ console.log("age30",age30)
 //     return name.firstName + " " + name.lastName
 // })
 // console.log("fullName",fullName)
+
+reduce method completed
