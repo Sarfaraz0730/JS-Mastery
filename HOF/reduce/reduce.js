@@ -79,4 +79,4 @@ console.log("age30",age30)
 // })
 // console.log("fullName",fullName)
 
-reduce method completed
+// reduce method completed
