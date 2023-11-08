@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch</title>
+    <style>
+        #container{
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+    </style>
+</head>
+<body>
+    <h1>API Fetch method</h1> 
+     <p>twiter api : curl --request GET 'https://api.twitter.com/2/users?ids=2244994945&user.fields=created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,url,username,verified,withheld&expansions=pinned_tweet_id' --header 'Authorization: Bearer $BEARER_TOKEN'</p>
+     <p>Bearer token of twiter : AAAAAAAAAAAAAAAAAAAAAAOpqwEAAAAAe8R5%2Bye4RDYIyrigfwnAMdxfBPI%3DtEv0MSXU6SImRdcdzVg6M7r5ddwglXr88sQhleyN6lf6OX4qwi</p>
+   <p>Access token : 1220901211492061184-NG48f3OOLgoB013IPRS2TheqYOkjnj</p>
+   <p>Access token and secret key :ZoxguTQViy1tclLmCScPraKX7D95SlsTyQgaSWIJSWdKo</p>
+
+   <div id="container"></div>
+     
+
+   <script src="index.js"></script>
+</body>
+
+</html>
