@@ -1,30 +1,3 @@
-// try{
-
-// fetch("https://fakestoreapi.com/products")
-// .then(function(response) {
-//   return response.json(); 
-// })
-// .then(function(result) {
-//   console.log("result : ", result);
-//  for(let i =0;i<result.length;i++){
-//     var contianer = document.getElementById("container")
-//     var newDiv = document.createElement("div");
-
-//     document.write(` ${result[i].id} :  ${result[i].title} </br> </br>`)
-    
-//      contianer.append(newDiv)
-
-//  }
-// })
-// .catch(function(err) {
-//   console.log(err);
-// });
-
-// }
-// catch(err){
-//     console.error("catch block error",err)
-// }
-
 try {
     fetch("https://fakestoreapi.com/products")
       .then(function(response) {
@@ -62,3 +35,10 @@ try {
     console.error("catch block error", err);
   }
   
+  const promise1 = new Promise()
+  const promise2 = new Promise()
+  const promise3 = new Promise()
+  const promise4 = new Promise()
+  proimise.all[promise1,promise2]
+
+//   Day 1: It was a great day! I participated in the CodeChef contest and successfully solved two problems. However, I faced some challenges while taking input from the CodeChef platform. Overall, it was a productive day.
